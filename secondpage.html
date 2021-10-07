@@ -1,0 +1,96 @@
+<html> <!--opening file tag for html of webpage-->
+<head> <!--Browswer tab section-->
+<title>STEM Second page</title> <!--Title of tab-->
+
+<link rel="stylesheet" href="css/style2.css">
+
+<script>function JSButtonSection() {alert("Further" + " " + "Together!");}</script> <!--Javascript button section-->
+
+<!--Image Javascript section-->
+<script>
+function bigImg(x) {
+  x.style.height = "500px";
+  x.style.width = "500px";
+}
+
+function normalImg(x) {
+  x.style.height = "200px";
+  x.style.width = "200px";
+}
+</script>
+
+<h2>Today's date</h2>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date("2021-10-05");
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</head> <!--closing tag - end of header section-->
+
+<body> <!--body of the page - the white/blank section-->
+
+<hr> <!--horizontal line across the page (optional)-->
+<H1 align="center">Phenomenal Female Computer Science Engineers</H1>
+<hr>
+
+<p align="center"><b>“We need to understand that if we all work on inclusion together</b></p>
+<p align="center"><b>it’s going to be faster, broader, better, and more thorough than anything we can do on our own.”</b></p>
+<p align="center"><b>-Ellen Pao</b></p>
+
+<br>
+<div align="center">
+  <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/pic1.png" alt="pic1" width="200" height="200">
+  <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/pic2.png" alt="pic2" width="200" height="200">
+</div>
+
+<br>
+<hr>
+<!--Table Formatting for engineers-->
+<table>
+<th>NAME</th>
+<th>What did they do?</th>
+<th>picture</th>
+<br>
+
+<tr>
+  <td>Frances Spence</td>
+  <td>was one of the original programmers for the ENIAC (the first electronic digital computer). She is considered one of the first computer programmers in history.</td>
+  <td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/pic1.png" alt="pic1" width="200" height="200"></td>
+</tr>
+
+<tr>
+  <td>Grace Hopper</td>
+  <td>Hopper is best known for her trailblazing contributions to computer programming, software development, and the design and implementation of programming languages.</td>
+</tr>
+
+<tr>
+  <td>Ada Lovelace</td>
+  <td>Ada Lovelace is considered the first computer programmer. Even though she wrote about a computer, the Analytical Engine, that was never built, she realized that the computer could follow a series of simple instructions, a program, to perform a complex calculation.</td>
+</tr>
+</table>
+
+<br>
+<hr>
+<!--creating a calculator-->
+<br>
+
+<hr>
+<nav>
+<a href="index.html">home main page</a><!--linking html links to the first page-->
+<a href="secondpage.html">Second page</a><!--linking html links to the second page-->
+</nav>
+
+
+<br>
+<hr>
+
+<button onclick="JSButtonSection()">Message pop Onclick Button</button><!--Button for running JS function-->
+
+<br>
+<hr>
+
+</body>
+</html>
